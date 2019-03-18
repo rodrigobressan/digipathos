@@ -1,1 +1,1 @@
-from plant_pathology_embrapa.cli import command
+from plant_pathology_embrapa.cli.commands import command

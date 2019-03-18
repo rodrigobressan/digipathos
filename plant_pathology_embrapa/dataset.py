@@ -84,7 +84,10 @@ class Dataset:
         :param index: the index to be fetched
         :return: the located text in the given index that matches the pattern
         """
-        return re.findall(pattern, contents)[index]
+        try:
+            return re.findall(pattern, contents)[index]
+        except IndexError:
+            return None
 
     def get_id(self) -> int:
         """

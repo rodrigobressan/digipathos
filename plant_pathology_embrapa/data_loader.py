@@ -2,7 +2,7 @@ import os
 from typing import List, Dict
 
 from plant_pathology_embrapa import Dataset
-from plant_pathology_embrapa.data.repository import DigipathosRemoteApi, DigipathosRepository
+from plant_pathology_embrapa.data.repository import DigipathosRemoteApi
 from plant_pathology_embrapa.utils import download_utils
 
 
@@ -13,17 +13,19 @@ class DataLoader:
 
     def __init__(self,
                  artifacts_path: str = 'artifacts',
-                 auto_fetch=True,
-                 repository: DigipathosRepository = DigipathosRemoteApi()):
+                 lang: str = 'pt',
+                 auto_fetch=True):
         """
         DataLoader basic initializer
         :param artifacts_path: where the artifacts will be stored after downloaded
+        :param lang: the language to be used to fetch names (crops and disorders)
         :param auto_fetch: should data be fetched automatically on initialization
         :param repository: the repository to be used. You can replace it here for another DataSource, but it must be a
         child of DigitpathosRepository
         """
-        self.repository = repository
         self.artifacts_path = artifacts_path
+        self.lang = lang
+        self.repository = DigipathosRemoteApi(self.lang)
 
         if auto_fetch:
             self.items = self.repository.load_datasets()
@@ -37,13 +39,12 @@ class DataLoader:
         """
         return self.repository.load_datasets()
 
-    def get_crops(self, lang: str = 'en') -> Dict[str, Dataset]:
+    def get_crops(self) -> Dict[str, Dataset]:
         """
-        Used to get all the crops withotu downloading them
-        :param lang: the lang to be queries [pt, en]
+        Used to get all the crops without downloading them
         :return: a dictionary containing all the datasets
         """
-        return self.repository.load_crops(lang)
+        return self.repository.load_crops()
 
     def get_datasets_from_crop(self, crop_name: str) -> List[Dataset]:
         """
@@ -92,5 +93,3 @@ class DataLoader:
 
         for item in items:
             download_utils.download_dataset(item, output_path)
-
-

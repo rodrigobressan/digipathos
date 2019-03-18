@@ -8,26 +8,27 @@ from plant_pathology_embrapa.constants import ENDPOINT_ITEMS, BASE_URL
 
 
 class DigipathosRepository(ABC):
-    def __init__(self):
+    def __init__(self, lang: str = 'pt'):
         self.__items = {}
         self.__crops = {}
+        self.lang = lang
 
     @abstractmethod
     def load_datasets(self) -> List[Dataset]:
         raise NotImplementedError("You should override the method get_items")
 
-    def load_crops(self, lang: str = 'en') -> Dict[str, Dataset]:
+    def load_crops(self) -> Dict[str, Dataset]:
         if not self.__items:
             self.__items = self.load_datasets()
 
         crops = {}
 
         for id, dataset in self.__items.items():
-            crop_name = dataset.get_crop_name(lang=lang)
+            crop_name = dataset.get_crop_name(lang=self.lang)
             if crop_name not in crops:
-                crops[crop_name] = [id]
+                crops[crop_name] = [dataset]
             else:
-                crops[crop_name].append(id)
+                crops[crop_name].append(dataset)
 
         self.__crops = crops
 
@@ -46,6 +47,9 @@ class DigipathosRepository(ABC):
         return self.__crops[crop_name]
 
     def load_item(self, item_id: int) -> Dataset:
+        if not self.__items:
+            self.__items = self.load_datasets()
+
         return self.__items[item_id]
 
 
