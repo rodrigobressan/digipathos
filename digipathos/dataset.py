@@ -15,10 +15,10 @@ class Dataset:
     def __init__(self,
                  full_name: str,
                  url: str,
-                 format: str,
+                 extension: str,
                  size: float):
         self.full_name = full_name
-        self.extension = format
+        self.extension = extension
         self.size = size
 
         self.url = BASE_URL + url

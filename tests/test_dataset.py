@@ -8,7 +8,7 @@ class TestDataset(unittest.TestCase):
     def setUp(self):
         self.dataset = Dataset(full_name='Abacaxi (Pineapple) - Broca (Pineapple Fruit Borer) - 1.zip',
                                url='/jspui/bitstream/123456789/871/4/Abacaxi%20%28Pineapple%29%20-%20Broca%20%28Pineapple%20Fruit%20Borer%29%20-%201.zip',
-                               format='zip',
+                               extension='zip',
                                size=1000)
 
     def test_name_english(self):
