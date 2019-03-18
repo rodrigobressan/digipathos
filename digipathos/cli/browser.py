@@ -1,14 +1,6 @@
 from digipathos.cli.commands.command import Command, get_commands, transpose_and_print
 from digipathos.data_loader import DataLoader
 
-# print('[1] list_datasets')
-# print('[2] list_crops')
-# print('[3] list_datasets_from_crop')
-# print('[4] get_dataset')
-# print('[5] download_dataset')
-# print('[6] download_all_datasets')
-# print('[7] download_datasets_from_crop')
-#
 DEFAULT_LANGUAGE = 'en'
 
 data_loader = DataLoader(auto_fetch=False, lang=DEFAULT_LANGUAGE)
@@ -68,7 +60,7 @@ def read_command() -> Command:
         command = commands[command_id]
         return command
     except Exception:
-        raise Exception()
+        raise Exception("Invalid command")
 
 
 if __name__ == '__main__':
