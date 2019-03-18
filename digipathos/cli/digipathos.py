@@ -1,5 +1,5 @@
-from plant_pathology_embrapa.cli.commands.command import Command, get_commands, transpose_and_print
-from plant_pathology_embrapa.data_loader import DataLoader
+from digipathos.cli.commands.command import Command, get_commands, transpose_and_print
+from digipathos.data_loader import DataLoader
 
 # print('[1] list_datasets')
 # print('[2] list_crops')

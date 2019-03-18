@@ -3,7 +3,7 @@ import shutil
 import unittest
 from os.path import exists
 
-from plant_pathology_embrapa.data_loader import DataLoader
+from digipathos.data_loader import DataLoader
 
 
 class TestDataLoader(unittest.TestCase):

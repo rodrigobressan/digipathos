@@ -1,9 +1,9 @@
 import os
 from typing import List, Dict
 
-from plant_pathology_embrapa import Dataset
-from plant_pathology_embrapa.data.repository import DigipathosRemoteApi
-from plant_pathology_embrapa.utils import download_utils
+from digipathos import Dataset
+from digipathos.data.repository import DigipathosRemoteApi
+from digipathos.utils import download_utils
 
 
 class DataLoader:

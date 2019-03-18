@@ -1,7 +1,7 @@
 import unittest
 
-from plant_pathology_embrapa.constants import BASE_URL
-from plant_pathology_embrapa.dataset import Dataset
+from digipathos.constants import BASE_URL
+from digipathos.dataset import Dataset
 
 
 class TestDataset(unittest.TestCase):

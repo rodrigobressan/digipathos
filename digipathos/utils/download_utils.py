@@ -1,7 +1,7 @@
 import os
 import urllib
 
-from plant_pathology_embrapa import Dataset
+from digipathos import Dataset
 
 
 def download_dataset(dataset: Dataset, output_dir: str, verbose=True) -> None:

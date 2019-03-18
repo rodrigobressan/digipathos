@@ -3,8 +3,8 @@ from typing import List, Dict
 
 import requests
 
-from plant_pathology_embrapa import Dataset
-from plant_pathology_embrapa.constants import ENDPOINT_ITEMS, BASE_URL
+from digipathos import Dataset
+from digipathos.constants import ENDPOINT_ITEMS, BASE_URL
 
 
 class DigipathosRepository(ABC):

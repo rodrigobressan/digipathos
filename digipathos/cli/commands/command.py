@@ -5,8 +5,8 @@ from typing import Dict, List
 
 from terminaltables import AsciiTable
 
-from plant_pathology_embrapa import Dataset
-from plant_pathology_embrapa.data_loader import DataLoader
+from digipathos import Dataset
+from digipathos.data_loader import DataLoader
 
 
 class Command(ABC):

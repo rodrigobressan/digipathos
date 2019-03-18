@@ -1,6 +1,6 @@
 import re
 
-from plant_pathology_embrapa.constants import BASE_URL
+from digipathos.constants import BASE_URL
 
 VALID_LANGUAGES = ['pt', 'en']
 pattern_en = '\(([^)]+)\)'
