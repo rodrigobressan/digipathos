@@ -1,3 +1,5 @@
+<p align="center"><img width=75% src="docs/figs/logo.png"></p>
+
 [![PyPI version](https://badge.fury.io/py/digipathos.svg)](https://pypi.org/project/digipathos)
 [![Build Status](https://travis-ci.org/bresan/digipathos_plant_pathology.svg?branch=master)](https://travis-ci.org/bresan/digipathos_plant_pathology)
 [![Coverage Status](https://coveralls.io/repos/github/bresan/digipathos_plant_pathology/badge.svg?branch=master)](https://coveralls.io/github/bresan/digipathos_plant_pathology?branch=master)
