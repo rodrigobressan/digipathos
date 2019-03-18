@@ -76,7 +76,7 @@ data_loader.download_all_datasets()
 
 Pretty simple, huh?
 
-A working example of default mode can be found [here as a Python script](https://github.com/bresan/digipathos_plant_pathology/blob/master/example/default/example.py).
+A working example can be found [here as a Python script](https://github.com/bresan/digipathos_plant_pathology/blob/master/example/example.py).
 
 
 # Troubleshooting

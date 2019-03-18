@@ -19,7 +19,7 @@ setup(
     name='digipathos',
     version='0.1',
     license='BSD-3-Clause',
-    url='https://github.com/bresan/entity_embeddings_categorical',
+    url='https://github.com/bresan/digipathos_plant_pathology',
     description='',
     long_description=read_file('README.md'),
     long_description_content_type="text/markdown",
