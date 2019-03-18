@@ -33,7 +33,7 @@ class Dataset:
         """
         return cls(full_name=item['name'],
                    url=item['bsLink'],
-                   format=item['format'],
+                   extension=item['format'],
                    size=item['size'])
 
     def validate_language(self, lang: str):
