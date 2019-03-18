@@ -39,7 +39,7 @@ python digipathos.py
 
 And then you're gonna be greeted by our dataset browser :-)
 
-<p align="center"><img width=50% src="docs/figs/datasets.png"></p>
+<p align="center"><img width=75% src="docs/figs/datasets.png"></p>
 
 
 ## Programmatically
