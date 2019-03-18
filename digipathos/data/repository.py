@@ -23,7 +23,7 @@ class DigipathosRepository(ABC):
 
         crops = {}
 
-        for id, dataset in self.__items.items():
+        for item_id, dataset in self.__items.items():
             crop_name = dataset.get_crop_name(lang=self.lang)
             if crop_name not in crops:
                 crops[crop_name] = [dataset]

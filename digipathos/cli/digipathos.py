@@ -55,8 +55,8 @@ def run_command_with_argument(command, arg):
 def read_command() -> Command:
     command_ids = ['ID']
     command_names = ['Command']
-    for id, command in commands.items():
-        command_ids.append(id)
+    for command_id, command in commands.items():
+        command_ids.append(command_id)
         command_names.append(command.desc)
 
     commands_list = [command_ids, command_names]

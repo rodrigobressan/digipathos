@@ -94,5 +94,5 @@ class Dataset:
         Used to get the id from a given dataset.
         :return: the id (int)
         """
-        id = self.url.split('/')[6]
-        return int(id)
+        item_id = self.url.split('/')[6]
+        return int(item_id)

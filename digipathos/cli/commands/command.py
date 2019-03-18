@@ -52,8 +52,8 @@ class ListDatasets(Command):
         dataset_crops = ['Crop']
         dataset_disorders = ['Disorder']
 
-        for id, dataset in command_response.items():
-            dataset_ids.append(id)
+        for dataset_id, dataset in command_response.items():
+            dataset_ids.append(dataset_id)
             dataset_crops.append(dataset.get_crop_name(lang=self.lang))
             dataset_disorders.append(dataset.get_disorder_name(lang=self.lang))
 
