@@ -39,6 +39,10 @@ python digipathos.py
 
 And then you're gonna be greeted by our dataset browser :-)
 
+<p align="center"><img width=75% src="docs/figs/browser.png"></p>
+
+An example listing all the datasets:
+
 <p align="center"><img width=75% src="docs/figs/datasets.png"></p>
 
 

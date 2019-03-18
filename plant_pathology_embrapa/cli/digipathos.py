@@ -16,12 +16,13 @@ commands = get_commands(data_loader)
 
 
 def print_header():
-    header = """        ____  _       _             __  __              
-       / __ \(_)___ _(_)___  ____ _/ /_/ /_  ____  _____
-      / / / / / __ `/ / __ \/ __ `/ __/ __ \/ __ \/ ___/
-     / /_/ / / /_/ / / /_/ / /_/ / /_/ / / / /_/ (__  ) 
-    /_____/_/\__, /_/ .___/\__,_/\__/_/ /_/\____/____/  
-            /____/ /_/                                  """
+    header = """  
+    ____  _       _             __  __              
+   / __ \(_)___ _(_)___  ____ _/ /_/ /_  ____  _____
+  / / / / / __ `/ / __ \/ __ `/ __/ __ \/ __ \/ ___/
+ / /_/ / / /_/ / / /_/ / /_/ / /_/ / / / /_/ (__  ) 
+/_____/_/\__, /_/ .___/\__,_/\__/_/ /_/\____/____/  
+        /____/ /_/                                  """
 
     print(header)
 
@@ -63,7 +64,7 @@ def read_command() -> Command:
     transpose_and_print(commands_list)
 
     try:
-        command_id = int(input('Selected action: '))
+        command_id = int(input('Command: '))
         command = commands[command_id]
         return command
     except Exception:
