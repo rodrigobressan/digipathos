@@ -52,5 +52,5 @@ class TestDataset(unittest.TestCase):
 
         self.assertEqual(other_dataset.url, full_url)
         self.assertEqual(other_dataset.full_name, item['name'])
-        self.assertEqual(other_dataset.format, item['format'])
+        self.assertEqual(other_dataset.extension, item['format'])
         self.assertEqual(other_dataset.size, item['size'])

@@ -9,7 +9,7 @@ from plant_pathology_embrapa.data_loader import DataLoader
 # print('[6] download_all_datasets')
 # print('[7] download_datasets_from_crop')
 #
-DEFAULT_LANGUAGE = 'pt'
+DEFAULT_LANGUAGE = 'en'
 
 data_loader = DataLoader(auto_fetch=False, lang=DEFAULT_LANGUAGE)
 commands = get_commands(data_loader)
@@ -52,8 +52,6 @@ def run_command_with_argument(command, arg):
 
 
 def read_command() -> Command:
-    print('List of commands: ')
-
     command_ids = ['ID']
     command_names = ['Command']
     for id, command in commands.items():
@@ -74,11 +72,3 @@ def read_command() -> Command:
 
 if __name__ == '__main__':
     init_interactive_mode()
-
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("-i", "--interactive", action='count',
-    #                     help="increase output verbosity")
-    # args = parser.parse_args()
-    #
-    # if args.interactive:
-    #     init_interactive_mode()

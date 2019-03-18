@@ -13,7 +13,7 @@ class DataLoader:
 
     def __init__(self,
                  artifacts_path: str = 'artifacts',
-                 lang: str = 'pt',
+                 lang: str = 'en',
                  auto_fetch=True):
         """
         DataLoader basic initializer
