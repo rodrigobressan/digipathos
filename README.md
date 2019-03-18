@@ -26,40 +26,7 @@ This project is inteded to suit most of the existent needs, so for this reason, 
 
 # Usage
 
-The usage of this utility library is provided in two modes: default and custom. In the default configuration, you can perform the following operations: Regression, Binary Classification and Multiclass Classification.
-
-If your data type differs from any of these, you can feel free to use the custom mode, where you can define most of the configurations related to the target processing and output from the neural network.
-
-## Programmatically
-
-
-```python
-    data_loader = DataLoader()
-
-    # list all the datasets
-    datasets = data_loader.get_datasets()
-
-    # now lets give a look at the crops
-    crops = data_loader.get_crops()
-
-    # how about getting all the datasets from a crop?
-    datasets_from_crop = data_loader.get_datasets_from_crop('Pineapple')
-
-    # now let's download a random dataset
-    dataset_id = random.choice(list(datasets.keys()))
-    data_loader.download_dataset(dataset_id=dataset_id)
-
-    # download all from a given crop
-    data_loader.download_datasets_from_crop('Pineapple')
-
-    # download all the datasets
-    data_loader.download_all_datasets()
-
-```
-
-Pretty simple, huh?
-
-A working example of default mode can be found [here as a Python script](https://github.com/bresan/digipathos_plant_pathology/blob/master/example/default/example.py).
+You can use Digipathos in two different ways: via terminal or programatically.
 
 ## CLI (Command-Line Interface)
 
@@ -67,8 +34,44 @@ This mode is highly recommended for those who are looking to explore a little bi
 
 
 ```bash
-    python digipathos.py
+python digipathos.py
 ```
+
+And then you're gonna be greeted by our dataset browser :-)
+
+<p align="center"><img width=100% src="docs/figs/datasets.png"></p>
+
+
+## Programmatically
+
+
+```python
+data_loader = DataLoader()
+
+# list all the datasets
+datasets = data_loader.get_datasets()
+
+# now lets give a look at the crops
+crops = data_loader.get_crops()
+
+# how about getting all the datasets from a crop?
+datasets_from_crop = data_loader.get_datasets_from_crop('Pineapple')
+
+# now let's download a random dataset
+dataset_id = random.choice(list(datasets.keys()))
+data_loader.download_dataset(dataset_id=dataset_id)
+
+# download all from a given crop
+data_loader.download_datasets_from_crop('Pineapple')
+
+# download all the datasets
+data_loader.download_all_datasets()
+```
+
+Pretty simple, huh?
+
+A working example of default mode can be found [here as a Python script](https://github.com/bresan/digipathos_plant_pathology/blob/master/example/default/example.py).
+
 
 # Troubleshooting
 
