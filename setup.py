@@ -30,5 +30,5 @@ setup(
     ],
     packages=find_packages(),
     install_requires=read_file('requirements.txt'),
-    entry_points={'console_scripts': ['digipathos=digipathos.__main__:main']}
+    entry_points={'console_scripts': ['digipathos=digipathos.__main__:run']}
 )
