@@ -10,6 +10,13 @@
 
 This project is aimed to serve as a wrapper for the Digipathos dataset, in order to list and download public data from plant pathologies provided by Embrapa (Brazilian Agricultural Research Corporation).
 
+Example of pictures:
+
+<img width=33% src="docs/figs/fig1.png"> <img width=33% src="docs/figs/fig2.png"> <img width=33% src="docs/figs/fig3.png">
+
+
+
+
 # Installation
 
 The installation is pretty simple if you have a virtualenv already installed on your machine. If you don't please rely to [VirtualEnv official documentation](https://virtualenv.pypa.io/en/latest/).
