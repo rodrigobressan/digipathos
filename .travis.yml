@@ -9,7 +9,7 @@ before_install:
 install:
 - pip install -r requirements.txt
 - pip install pytest pytest-cov
-- pip install --user codecov
+- pip install codecov
 - pip install mypy
 script:
 - py.test --doctest-modules --cov=digipathos/
