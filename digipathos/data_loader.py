@@ -2,7 +2,7 @@ import os
 from typing import List, Dict
 
 from digipathos import Dataset
-from digipathos.data.repository import DigipathosRemoteApi
+from digipathos.data import DigipathosRemoteApi
 from digipathos.utils import download_utils
 
 

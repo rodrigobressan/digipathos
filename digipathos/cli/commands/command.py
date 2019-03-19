@@ -5,8 +5,7 @@ from typing import Dict, List
 
 from terminaltables import AsciiTable
 
-from digipathos import Dataset
-from digipathos.data_loader import DataLoader
+from digipathos import Dataset, DataLoader
 
 
 class Command(ABC):
