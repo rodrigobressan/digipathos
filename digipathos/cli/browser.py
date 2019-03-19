@@ -1,8 +1,9 @@
 from digipathos.cli.command import transpose_and_print, Command, get_commands
+from digipathos.data.data_loader import DataLoader
 
 DEFAULT_LANGUAGE = 'en'
 
-data_loader = DataLoader(auto_fetch=False, lang=DEFAULT_LANGUAGE)
+data_loader = DataLoader(auto_fetch=True, lang=DEFAULT_LANGUAGE)
 commands = get_commands(data_loader)
 
 

@@ -1,7 +1,11 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 from typing import List, Dict
 
 import requests
+
+from digipathos.constants import BASE_URL, ENDPOINT_ITEMS
+from digipathos.data.dataset import Dataset
 
 
 class DigipathosRepository(ABC):
@@ -9,6 +13,7 @@ class DigipathosRepository(ABC):
         self.__items = {}
         self.__crops = {}
         self.lang = lang
+        self.last_time_fetched = None
 
     @abstractmethod
     def load_datasets(self) -> List[Dataset]:
@@ -51,7 +56,23 @@ class DigipathosRepository(ABC):
 
 
 class DigipathosRemoteApi(DigipathosRepository):
+    THRESHOLD_CACHE = 10
+
     def load_datasets(self) -> List[Dataset]:
+
+        if self.last_time_fetched:
+            interval = datetime.now() - self.last_time_fetched
+
+            if interval.seconds > self.THRESHOLD_CACHE:
+                self.__items = self.fetch_data_from_remote()
+        else:  # first time
+            self.__items = self.fetch_data_from_remote()
+
+        self.last_time_fetched = datetime.now()
+
+        return self.__items
+
+    def fetch_data_from_remote(self) -> List[Dataset]:
         url = BASE_URL + ENDPOINT_ITEMS
         resp = requests.get(url=url)
         data = resp.json()
@@ -64,8 +85,6 @@ class DigipathosRemoteApi(DigipathosRepository):
             item_id = item.get_id()
 
             items[item_id] = item
-
-        self.__items = items
 
         return items
 

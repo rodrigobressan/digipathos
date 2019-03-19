@@ -1,6 +1,8 @@
 import os
 import urllib
 
+from digipathos.data.dataset import Dataset
+
 
 def download_dataset(dataset: Dataset, output_dir: str, verbose=True) -> None:
     """

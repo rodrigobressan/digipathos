@@ -1,5 +1,7 @@
 import re
 
+from digipathos.constants import BASE_URL
+
 VALID_LANGUAGES = ['pt', 'en']
 pattern_en = '\(([^)]+)\)'
 pattern_pt = '(?<!\S)\w+(?!\S)'
