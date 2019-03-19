@@ -2,7 +2,8 @@
 
 [![PyPI version](https://badge.fury.io/py/digipathos.svg)](https://pypi.org/project/digipathos)
 [![Build Status](https://travis-ci.org/bresan/digipathos_plant_pathology.svg?branch=master)](https://travis-ci.org/bresan/digipathos_plant_pathology)
-[![codecov](https://codecov.io/gh/bresan/digipathos_plant_pathology/branch/master/graph/badge.svg)](https://codecov.io/gh/bresan/digipathos_plant_pathology)[![GitHub](https://img.shields.io/github/license/bresan/digipathos_plant_pathology.svg)](https://github.com/bresan/digipathos_plant_pathology/blob/master/LICENSE.md)
+[![codecov](https://codecov.io/gh/bresan/digipathos_plant_pathology/branch/master/graph/badge.svg)](https://codecov.io/gh/bresan/digipathos_plant_pathology)
+[![GitHub](https://img.shields.io/github/license/bresan/digipathos_plant_pathology.svg)](https://github.com/bresan/digipathos_plant_pathology/blob/master/LICENSE.md)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e02bc243822c4ce884c4adf87ff6e9f7)](https://www.codacy.com/app/bresan/digipathos_plant_pathology?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bresan/digipathos_plant_pathology&amp;utm_campaign=Badge_Grade)
 
 # Overview
