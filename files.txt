@@ -1,5 +1,5 @@
 /Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/lib/python3.6/site-packages/digipathos-0.2.2-py3.6.egg
-/Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/bin/browser
+/Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/bin/digipathos
 /Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/bin/py.test
 /Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/bin/pytest
 /Users/rodrigobresan/Documents/dev/github/envs/test_digipathos/bin/dmypy

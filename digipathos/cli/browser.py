@@ -3,6 +3,7 @@ from digipathos.data.data_loader import DataLoader
 
 DEFAULT_LANGUAGE = 'en'
 
+print('Fetching data from Embrapa API, this may take a while')
 data_loader = DataLoader(auto_fetch=True, lang=DEFAULT_LANGUAGE)
 commands = get_commands(data_loader)
 
