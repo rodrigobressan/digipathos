@@ -36,7 +36,7 @@ This mode is highly recommended for those who are looking to explore a little bi
 
 
 ```bash
-python browser.py
+digipathos
 ```
 
 And then you're gonna be greeted by our dataset browser :-)
