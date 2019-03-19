@@ -17,7 +17,7 @@ def read_file(*file_name: str) -> str:
 
 setup(
     name='digipathos',
-    version='0.2',
+    version='0.2.1',
     license='BSD-3-Clause',
     url='https://github.com/bresan/digipathos_plant_pathology',
     description='',
@@ -29,5 +29,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     packages=find_packages(),
-    install_requires=read_file('requirements.txt')
+    install_requires=read_file('requirements.txt'),
+    entry_points={'console_scripts': ['digipathos=digipathos:main']}
 )
