@@ -1,6 +1,6 @@
 import random
 
-from digipathos import DataLoader
+from digipathos.data.data_loader import DataLoader
 
 if __name__ == '__main__':
     data_loader = DataLoader(artifacts_path='artifacts')
