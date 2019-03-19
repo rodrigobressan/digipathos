@@ -1,4 +1,4 @@
-<p align="center"><img width=75% src="docs/figs/logo.png"></p>
+<img width=75% src="docs/figs/logo.png">
 
 [![PyPI version](https://badge.fury.io/py/digipathos.svg)](https://pypi.org/project/digipathos)
 [![Build Status](https://travis-ci.org/bresan/digipathos_plant_pathology.svg?branch=master)](https://travis-ci.org/bresan/digipathos_plant_pathology)
@@ -20,7 +20,7 @@ pip install digipathos
 
 # Documentation
 
-Besides the docstrings, major details about the documentation can be found [here](https://entity-embeddings-categorical.readthedocs.io/en/latest/).
+Besides the docstrings, major details about the documentation can be found [here](https://.readthedocs.io/en/latest/).
 
 # Testing
 
