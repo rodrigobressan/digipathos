@@ -20,7 +20,7 @@ pip install digipathos
 
 # Documentation
 
-Besides the docstrings, major details about the documentation can be found [here](https://.readthedocs.io/en/latest/).
+Besides the docstrings, major details about the documentation can be found [here](https://digipathos.readthedocs.io/en/latest/).
 
 # Testing
 
