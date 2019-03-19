@@ -12,7 +12,7 @@ This project is aimed to serve as a wrapper for the Digipathos dataset, in order
 
 Example of pictures:
 
-<img width=33% src="docs/figs/fig1.png"> <img width=33% src="docs/figs/fig2.png"> <img width=33% src="docs/figs/fig3.png">
+<img width=33% src="docs/figs/fig.png"> <img width=33% src="docs/figs/fig2.png"> <img width=33% src="docs/figs/fig3.png">
 
 
 
