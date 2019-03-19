@@ -3,8 +3,6 @@ from typing import List, Dict
 
 import requests
 
-from digipathos import Dataset
-from digipathos.constants import ENDPOINT_ITEMS, BASE_URL
 
 class DigipathosRepository(ABC):
     def __init__(self, lang: str = 'pt'):

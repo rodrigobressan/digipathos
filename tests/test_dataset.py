@@ -1,7 +1,7 @@
 import unittest
 
 from digipathos.constants import BASE_URL
-from digipathos.dataset import Dataset
+from digipathos.data.dataset import Dataset
 
 
 class TestDataset(unittest.TestCase):

@@ -1,1 +1,1 @@
-from digipathos.utils import download_utils
+import digipathos.utils.download_utils

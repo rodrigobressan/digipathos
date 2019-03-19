@@ -1,1 +1,2 @@
-from digipathos.cli.commands import command
+import digipathos.cli.browser
+import digipathos.cli.command

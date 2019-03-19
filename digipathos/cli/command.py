@@ -5,9 +5,6 @@ from typing import Dict, List
 
 from terminaltables import AsciiTable
 
-from digipathos import Dataset, DataLoader
-
-
 class Command(ABC):
     def __init__(self,
                  desc: str,

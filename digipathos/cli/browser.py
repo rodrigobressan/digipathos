@@ -1,6 +1,4 @@
-from digipathos.cli.commands.command import transpose_and_print, Command, get_commands
-
-from digipathos.data_loader import DataLoader
+from digipathos.cli.command import transpose_and_print, Command, get_commands
 
 DEFAULT_LANGUAGE = 'en'
 
