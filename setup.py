@@ -16,8 +16,8 @@ def read_file(*file_name: str) -> str:
 
 
 setup(
-    name='answer',
-    version='0.1',
+    name='digipathos',
+    version='0.2.4',
     license='BSD-3-Clause',
     url='https://github.com/bresan/digipathos_plant_pathology',
     description='',
